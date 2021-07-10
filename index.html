@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Modern Web Calculator</h1></header>
+    <main>
+       <section>
+           <article>
+                <div id="calculatorContainer">
+                    <div id="calculatorDisplay"></div>
+                    <div id="calculatorKeyboard">
+                        <button class="calcButtons" onclick="clearDisplay('AC')">AC</button>    
+                        <button class="calcButtons" onclick="reverseDisplay('[+/-]')">[+/-]</button>    
+                        <button class="calcButtons" onclick="calcPercent('%')">%</button>    
+                        <button class="calcSpecialButtons" onclick="insertValue('/')">/</button>    
+
+                        <button class="calcButtons" onclick="insertValue('7')">7</button>    
+                        <button class="calcButtons" onclick="insertValue('8')">8</button>    
+                        <button class="calcButtons" onclick="insertValue('9')">9</button>    
+                        <button class="calcSpecialButtons" onclick="insertValue('*')">X</button> 
+                        
+                        <button class="calcButtons" onclick="insertValue('4')">4</button>    
+                        <button class="calcButtons" onclick="insertValue('5')">5</button>    
+                        <button class="calcButtons" onclick="insertValue('6')">6</button>    
+                        <button class="calcSpecialButtons" onclick="insertValue('-')">-</button> 
+                        
+                        <button class="calcButtons" onclick="insertValue('1')">1</button>    
+                        <button class="calcButtons" onclick="insertValue('2')">2</button>    
+                        <button class="calcButtons" onclick="insertValue('3')">3</button>    
+                        <button class="calcSpecialButtons" onclick="insertValue('+')">+</button> 
+                        
+                        <button class="calcButtons" onclick="insertValue('0')">0</button>    
+                        <button class="calcButtons" onclick="insertValue('.')">.</button>    
+                        <button class="calcSpecialButtons" onclick="calcValue()" >=</button>  
+                    </div>
+                </div>
+           </article>
+       </section>
+    </main>
+    <footer><h2>Created By Leandro Duarte</h2></footer>
+   
+    <script src="js/index.js"></script>
+</body>
+</html>
